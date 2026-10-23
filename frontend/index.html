@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka</title>
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteka</h1>
+
+        <p>
+            Przykładowa aplikacja rozwijana podczas laboratoriów.
+        </p>
+
+        <nav>
+            <a href="#about">O bibliotece</a>
+            <a href="#books">Książki</a>
+            <a href="#rules">Jak wypożyczyć?</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>O bibliotece</h2>
+
+            <p>
+                Witaj w przykładowej Bibliotece.
+                W kolejnych laboratoriach ta prosta strona zostanie
+                rozbudowana do aplikacji działającej w Django.
+            </p>
+
+            <p>
+                Docelowo użytkownik będzie mógł przeglądać książki,
+                wyświetlać ich szczegóły oraz wykonywać podstawowe
+                operacje związane z wypożyczeniami.
+            </p>
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdWpPw-wziUeknYakEzZz3DAnmDI4vKFfCEKVeycJeg&s=10"
+                alt="Ikona książki"
+                width="120"
+            >
+        </section>
+
+        <section id="books">
+            <h2>Polecane książki</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tytuł</th>
+                        <th>Autor</th>
+                        <th>Rok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Solaris</td>
+                        <td>Stanisław Lem</td>
+                        <td>1961</td>
+                    </tr>
+                    <tr>
+                        <td>Lalka</td>
+                        <td>Bolesław Prus</td>
+                        <td>1890</td>
+                    </tr>
+                    <tr>
+                        <td>Hobbit</td>
+                        <td>J.R.R. Tolkien</td>
+                        <td>1937</td>
+                    </tr>
+                    <tr>
+                        <td>Mały Książę</td>
+                        <td>Antoine de Saint-Exupéry</td>
+                        <td>1943</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article>
+                <h3>Solaris</h3>
+
+                <div class="book-info">
+                    <p>
+                        <strong>Autor:</strong> Stanisław Lem
+                    </p>
+
+                    <p>
+                        <strong>Rok wydania:</strong> 1961
+                    </p>
+                </div>
+
+                <p>
+                    Powieść science fiction opowiadająca o próbie
+                    kontaktu człowieka z obcą formą inteligencji.
+                </p>
+            </article>
+
+            <article>
+                <h3>Lalka</h3>
+
+                <p>
+                    <strong>Autor:</strong> Bolesław Prus
+                </p>
+
+                <p>
+                    Powieść przedstawiająca historię Stanisława
+                    Wokulskiego oraz społeczeństwo XIX-wiecznej Warszawy.
+                </p>
+            </article>
+
+            <article>
+                <h3>Hobbit</h3>
+
+                <p>
+                    <strong>Autor:</strong> J.R.R. Tolkien
+                </p>
+
+                <p>
+                    Historia wyprawy Bilba Bagginsa, który opuszcza
+                    spokojny dom i wyrusza w niebezpieczną podróż.
+                </p>
+            </article>
+
+            <article>
+                <h3>Mały Książę</h3>
+
+                <div class="book-info">
+                    <p>
+                        <strong>Autor:</strong> Antoine de Saint-Exupéry
+                    </p>
+
+                    <p>
+                        <strong>Rok wydania:</strong> 1943
+                    </p>
+                </div>
+
+                <p>
+                    Opowieść o podróży Małego Księcia i jego spotkaniach
+                    z mieszkańcami różnych planet.
+                </p>
+            </article>
+        </section>
+
+        <section id="rules">
+            <h2>Jak wypożyczyć książkę?</h2>
+
+            <ol>
+                <li>Znajdź interesującą Cię książkę.</li>
+                <li>Sprawdź, czy jest dostępna.</li>
+                <li>Zaloguj się do aplikacji.</li>
+                <li>Wybierz opcję wypożyczenia.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Planowane funkcje</h2>
+
+            <ul>
+                <li>lista książek,</li>
+                <li>szczegóły książki,</li>
+                <li>autorzy,</li>
+                <li>dodawanie i edycja danych,</li>
+                <li>logowanie użytkowników,</li>
+                <li>wypożyczenia.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Projekt ćwiczeniowy — Projektowanie aplikacji webowych
+        </p>
+    </footer>
+
+</body>
+</html>
