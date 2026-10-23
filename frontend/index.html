@@ -18,6 +18,9 @@
             <a href="#about">O bibliotece</a>
             <a href="#books">Książki</a>
             <a href="#rules">Jak wypożyczyć?</a>
+            <a href="add_book.html">
+                Dodaj książkę
+            </a>
         </nav>
     </header>
 
@@ -79,6 +82,58 @@
                     </tr>
                 </tbody>
             </table>
+
+        <section id="search">
+            <h2>Wyszukaj książkę</h2>
+
+        <form method="get">
+
+            <div>
+                <label for="query">
+                    Tytuł lub autor:
+                </label>
+
+                <input
+                    type="text"
+                    id="query"
+                    name="query"
+                    placeholder="np. Solaris"
+                >
+            </div>
+
+            <div>
+                <label for="search-category">
+                    Kategoria:
+                </label>
+
+                <select
+                    id="search-category"
+                    name="category"
+                >
+                    <option value="">
+                        Wszystkie
+                    </option>
+
+                    <option value="fantasy">
+                        Fantasy
+                    </option>
+
+                    <option value="science-fiction">
+                        Science fiction
+                    </option>
+
+                    <option value="crime">
+                        Kryminał
+                    </option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Szukaj
+            </button>
+
+        </form>
+        </section>
 
             <article>
                 <h3>Solaris</h3>
