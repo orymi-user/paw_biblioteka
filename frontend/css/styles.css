@@ -1,0 +1,173 @@
+body {
+    background-color: #d3c2a8;
+    color: #222222;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+section {
+    background-color: white;
+
+    margin: 20px 0;
+    padding: 20px;
+
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+}
+header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #1f3c5c;
+    color: white;
+
+    padding: 20px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.book-card {
+    flex: 1 1 250px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    padding: 15px;
+    margin: 15px 0;
+
+    background-color: #fafafa;
+}
+.book-card h3 {
+    margin-top: 0;
+}
+.book-info {
+    color: #555555;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin: 20px 0;
+}
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #eeeeee;
+}
+form {
+    max-width: 600px;
+}
+form div {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 8px;
+
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+button {
+    background-color: #1f3c5c;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 16px;
+
+    cursor: pointer;
+}
+button:hover {
+    background-color: #315c87;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #eeeeee;
+}
+.book-list {
+    display: flex;
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.search-form {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: end;
+
+    max-width: none;
+}
+.search-form div {
+    flex: 1;
+    margin-bottom: 0;
+}
+.search-form button {
+    flex: 0 0 auto;
+}
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    main {
+        width: 95%;
+    }
+    
+
+}
+.table-container {
+    overflow-x: auto;
+}
