@@ -1,0 +1,40 @@
+{% extends "biblioteka/base.html" %}
+{% load static %}
+
+
+{% block title %}
+    Strona główna — Biblioteka
+{% endblock %}
+
+
+{% block content %}
+
+    <section id="about">
+        <h2>O bibliotece</h2>
+
+        <p>
+            Witaj w przykładowej Bibliotece.
+            Aplikacja jest rozwijana podczas laboratoriów
+            z Projektowania aplikacji webowych.
+        </p>
+
+        <img
+            class="library-image"
+            src="{% static 'biblioteka/images/library.jpg' %}"
+            alt="Wnętrze biblioteki"
+        >
+    </section>
+
+    <section>
+        <h2>Planowane funkcje</h2>
+
+        <ul>
+            <li>lista książek,</li>
+            <li>autorzy,</li>
+            <li>dodawanie i edycja danych,</li>
+            <li>logowanie użytkowników,</li>
+            <li>wypożyczenia.</li>
+        </ul>
+    </section>
+
+{% endblock %}

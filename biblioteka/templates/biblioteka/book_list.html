@@ -1,0 +1,55 @@
+{% extends "biblioteka/base.html" %}
+
+
+{% block title %}
+    Książki — Biblioteka
+{% endblock %}
+
+
+{% block content %}
+
+    <section>
+        <h2>Lista książek</h2>
+
+        <div class="book-list">
+
+            {% for book in books %}
+
+            <article class="book-card">
+
+                <h3>
+                    {{ book.title }}
+                </h3>
+
+                <div class="book-info">
+
+                    <p>
+                        <strong>Autor:</strong>
+                        {{ book.author }}
+                    </p>
+
+                    <p>
+                        <strong>Rok wydania:</strong>
+                        {{ book.year }}
+                    </p>
+
+                    <p>
+                        <strong>Dostępność:</strong>
+
+                        {% if book.available %}
+                            Dostępna
+                        {% else %}
+                            Niedostępna
+                        {% endif %}
+                    </p>
+
+                </div>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+    </section>
+
+{% endblock %}
