@@ -1,0 +1,65 @@
+{% extends "biblioteka/base.html" %}
+
+
+{% block title %}
+    {{ author }} — Biblioteka
+{% endblock %}
+
+
+{% block content %}
+
+    <section>
+
+        <h2>
+            {{ author.first_name }}
+            {{ author.last_name }}
+        </h2>
+
+        <h3>Książki autora</h3>
+
+        <div class="book-list">
+
+            {% for book in author.books.all %}
+
+                <article class="book-card">
+
+                    <h4>
+                        {{ book.title }}
+                    </h4>
+
+                    <p>
+                        Rok:
+                        {{ book.year }}
+                    </p>
+
+                    <a
+                        class="button-link"
+                        href="{% url 'book_detail' book.id %}"
+                    >
+                        Szczegóły
+                    </a>
+
+                </article>
+
+            {% empty %}
+
+                <p>
+                    Ten autor nie ma jeszcze książek w bazie.
+                </p>
+
+            {% endfor %}
+
+        </div>
+
+        <p>
+            <a
+                class="button-link"
+                href="{% url 'author_list' %}"
+            >
+                Powrót do autorów
+            </a>
+        </p>
+
+    </section>
+
+{% endblock %}
